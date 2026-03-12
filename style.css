@@ -1,4 +1,4 @@
-/* IMPORTAR FUENTE BONITA */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 *{
@@ -14,7 +14,7 @@ body{
     color:#333;
 }
 
-/* ---------------- HEADER ---------------- */
+/* ----------- HEADER ---------------- */
 
 header{
     background: linear-gradient(90deg,#ff7a00,#22c55e);
@@ -30,7 +30,7 @@ header h1{
     font-size:22px;
 }
 
-/* ---------------- BOTONES GENERALES ---------------- */
+/* ---------------- BOTONES GENERALES ------- */
 
 button{
     padding:12px 20px;
@@ -63,7 +63,7 @@ button{
     transform:scale(1.05);
 }
 
-/* ---------------- LOGIN / REGISTRO ---------------- */
+/* ---------- LOGIN / REGISTRO ---------------- */
 
 .login-body{
     display:flex;
@@ -94,7 +94,7 @@ button{
     border-radius:10px;
 }
 
-/* ---------------- MENU PRINCIPAL ---------------- */
+/* ----------- MENU PRINCIPAL ---------------- */
 
 .menu-grid{
     display:grid;
@@ -120,7 +120,7 @@ button{
     transform:translateY(-5px);
 }
 
-/* ---------------- INICIO ---------------- */
+/* ---------------- INICIO -------- */
 
 .inicio-body{
     display:flex;
@@ -139,7 +139,7 @@ button{
     margin-bottom:20px;
 }
 
-/* ---------------- FOOTER ---------------- */
+/* ---------------- FOOTER -------- */
 
 footer{
 
@@ -345,8 +345,14 @@ background:#1f1f1f;
 color:white;
 }
 #contador{
-font-size:26px;
+
+font-size:28px;
 font-weight:bold;
+
 color:#b30000;
-margin-bottom:20px;
+
+text-align:center;
+
+margin-bottom:30px;
+
 }
