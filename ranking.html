@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<h2>Simulador de apuesta</h2>
+
+<button onclick="apostar()">Apostar S/2</button>
+
+<p id="resultadoApuesta"></p>
+<head>
+<meta charset="UTF-8">
+<title>Ranking Mundial 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="menu">
+<a href="principal.html">Inicio</a>
+<a href="categorias.html">Categorías</a>
+<a href="selectivos.html">Selectivos</a>
+<a href="eventos.html">Eventos</a>
+</nav>
+
+<h1 class="titulo-ranking">Ranking Mundial Marinera 2026</h1>
+
+<div class="ranking-container">
+
+<!-- UNIDAD -->
+<div class="categoria">
+<img src="imagenes/unidad.jpg">
+<h2>Categoría Unidad</h2>
+
+<p><strong>1°</strong> Roboam Muñoz y María del Carmen Hernández (Pareja 353)</p>
+<p><strong>2°</strong> Javier Aguilar y Adriana Paico (Pareja 352)</p>
+<p><strong>3°</strong> Rafael Ferrero y Katherine Cuba (Pareja 360)</p>
+</div>
+
+
+<!-- ORO -->
+<div class="categoria">
+<img src="imagenes/oro.jpg">
+<h2>Categoría Oro</h2>
+
+<p><strong>1°</strong> Miguel Albornoz y Jenny Urquizo (Pareja 931)</p>
+<p><strong>2°</strong> Omar Durand y María Medina (Pareja 944)</p>
+<p><strong>3°</strong> Julio León y Mirtha Guevara (Pareja 936)</p>
+</div>
+
+
+<!-- PRE INFANTES -->
+<div class="categoria">
+<img src="imagenes/preinfantes.jpg">
+<h2>Categoría Pre Infantes</h2>
+
+<p><strong>1°</strong> Aaron Romero y María Paz (Pareja 20)</p>
+<p><strong>2°</strong> Ian Jiménez y Ariel Jurado (Pareja 2)</p>
+<p><strong>3°</strong> Ignacio Cerna y Elania Kuduk (Pareja 40)</p>
+</div>
+
+
+<!-- INFANTES -->
+<div class="categoria">
+<img src="imagenes/infantes.jpg">
+<h2>Categoría Infantes</h2>
+
+<p><strong>1°</strong> Adrián Matta y Antonella Sánchez (Pareja 235)</p>
+<p><strong>2°</strong> Angel Isla y Rafaella Aguinaga (Pareja 240)</p>
+<p><strong>3°</strong> Rodrigo Silva y Goldina Rodríguez (Pareja 202)</p>
+</div>
+
+
+<!-- NOVELES -->
+<div class="categoria">
+<img src="imagenes/noveles.jpg">
+<h2>Categoría Noveles</h2>
+
+<p><strong>1°</strong> Carlos Alegre y Abigail López (Pareja 809)</p>
+<p><strong>2°</strong> Jeremi Coronel y Daphne Del Pilar Briceño (Pareja 848)</p>
+<p><strong>3°</strong> Mathsuei Turpo y Claudia Díaz (Pareja 697)</p>
+</div>
+
+
+<!-- INFANTIL -->
+<div class="categoria">
+<img src="imagenes/infantil.jpg">
+<h2>Categoría Infantil</h2>
+
+<p><strong>1°</strong> Ángelo Arévalo y Domenica Kou Gutiérrez (Pareja 458)</p>
+<p><strong>2°</strong> Jesús Bustios y Vannia Corbacho (Pareja 460)</p>
+<p><strong>3°</strong> Renato Rodríguez y Paola González (Pareja 480)</p>
+</div>
+
+
+<!-- JUNIOR -->
+<div class="categoria">
+<img src="imagenes/junior.jpg">
+<h2>Categoría Junior</h2>
+
+<p><strong>1°</strong> Fabrizzio Di Tolla y Isabella Yzaga (Pareja 762)</p>
+<p><strong>2°</strong> Aldhair Vilcherrez y Daniela Paz (Pareja 700)</p>
+<p><strong>3°</strong> Rodrigo Rimachi y Luciana Agüero (Pareja 750)</p>
+</div>
+
+
+<!-- MASTER -->
+<div class="categoria">
+<img src="imagenes/master.jpg">
+<h2>Categoría Master</h2>
+
+<p><strong>1°</strong> Henry Martín Orihuela y Carla Novoa (Pareja 284)</p>
+<p><strong>2°</strong> Fabricio Varela y Lisette Vidal (Pareja 259)</p>
+<p><strong>3°</strong> Fabricio Varela y Lisette Vidal (Pareja 247)</p>
+</div>
+
+
+<!-- SENIOR -->
+<div class="categoria">
+<img src="imagenes/senior.jpg">
+<h2>Categoría Senior</h2>
+
+<p><strong>1°</strong> Martin Aguilar y Graciela Chuquipoma (Pareja 71)</p>
+<p><strong>2°</strong> Eduardo Revilla y Paola Sachun (Pareja 10)</p>
+<p><strong>3°</strong> Andrés Jara y Cynthia Vargas (Pareja 81)</p>
+</div>
+
+
+<!-- JUVENIL -->
+<div class="categoria">
+<img src="imagenes/juvenil.jpg">
+<h2>Categoría Juvenil</h2>
+
+<p><strong>1°</strong> Joaquín Sánchez y Adriana Villavicencio (Pareja 490)</p>
+<p><strong>2°</strong> Sebastián Rupay y Angie García (Pareja 556)</p>
+<p><strong>3°</strong> Rodrigo Tafur y Sherilyn Chileno (Pareja 517)</p>
+</div>
+
+
+<!-- ADULTOS -->
+<div class="categoria">
+<img src="imagenes/adultos.jpg">
+<h2>Categoría Adultos</h2>
+
+<p><strong>1°</strong> Khider Baldwin Polo y Paula Galdos (Pareja 331)</p>
+<p><strong>2°</strong> Julio Callanca y Daniela Ferrero (Pareja 326)</p>
+<p><strong>3°</strong> Sebastián Vargas y Gianella Mori (Pareja 320)</p>
+</div>
+
+
+<!-- CAMPEON DE CAMPEONES -->
+<div class="categoria campeon">
+<img src="imagenes/campeones.jpg">
+<h2>Campeón de Campeones</h2>
+
+<p><strong>1°</strong> Luis Alejandro Donet y Michelle Pimentel (Pareja 369)</p>
+</div>
+
+</div>
+
+</body>
+</html>

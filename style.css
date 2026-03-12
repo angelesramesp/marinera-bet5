@@ -184,3 +184,169 @@ header button:hover {
 .menu a:hover{
     color:#111;
 }
+.menu{
+background:#111;
+padding:15px;
+}
+
+.menu ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.dropdown{
+position:relative;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+background:white;
+min-width:150px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+color:black;
+display:block;
+padding:10px;
+}
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+.titulo-ranking{
+text-align:center;
+margin-top:30px;
+}
+
+.ranking-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+padding:40px;
+}
+
+.categoria{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.categoria img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.campeon{
+background:linear-gradient(135deg,#ffcc00,#ff8800);
+color:white;
+font-weight:bold;
+}
+
+.perfil-container{
+
+max-width:700px;
+margin:60px auto;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+.perfil-titulo{
+
+font-size:30px;
+margin-bottom:25px;
+
+}
+
+.perfil-info{
+
+font-size:18px;
+margin:10px 0;
+
+}
+
+.boton-salir{
+
+margin-top:30px;
+padding:12px 25px;
+background:#ff4d4d;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+.boton-salir:hover{
+
+background:#cc0000;
+
+}
+
+.boton-apostar{
+
+position: fixed;
+
+bottom: 20px;
+
+right: 20px;
+
+background: red;
+
+color: white;
+
+padding: 15px 25px;
+
+border-radius: 30px;
+
+font-weight: bold;
+
+text-decoration: none;
+
+box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+
+transition: 0.3s;
+
+}
+
+.boton-apostar:hover{
+
+transform: scale(1.1);
+
+background: darkred;
+
+}
+.oscuro{
+background-color:#121212;
+color:white;
+}
+
+.oscuro header{
+background:#1f1f1f;
+}
+
+.oscuro a{
+color:white;
+}
+#contador{
+font-size:26px;
+font-weight:bold;
+color:#b30000;
+margin-bottom:20px;
+}

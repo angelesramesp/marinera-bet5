@@ -5,6 +5,7 @@
 <title>Registro</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="login-body">
 
 <div class="login-box">
@@ -21,7 +22,7 @@
 
 <label>
 <input type="checkbox" id="mayor">
- Declaro ser mayor de 18 años
+Declaro ser mayor de 18 años
 </label>
 
 <p id="mensaje" style="color:red;"></p>
@@ -29,37 +30,50 @@
 <button onclick="registrar()">Registrarse</button>
 
 <a href="login.html">¿Ya tienes cuenta? Inicia sesión</a>
+
 </div>
 
 <script>
+
 function mostrarPassword(){
-  let p1 = document.getElementById("password");
-  let p2 = document.getElementById("confirmar");
-  p1.type = p1.type === "password" ? "text" : "password";
-  p2.type = p2.type === "password" ? "text" : "password";
+
+let p1 = document.getElementById("password");
+let p2 = document.getElementById("confirmar");
+
+p1.type = p1.type === "password" ? "text" : "password";
+p2.type = p2.type === "password" ? "text" : "password";
+
 }
 
 function registrar(){
-  let pass = document.getElementById("password").value;
-  let confirm = document.getElementById("confirmar").value;
-  let mayor = document.getElementById("mayor").checked;
-  let mensaje = document.getElementById("mensaje");
 
-  if(!mayor){
-    mensaje.innerText = "Debes ser mayor de edad.";
-    return;
-  }
+let nombre = document.getElementById("nombre").value;
+let correo = document.getElementById("correo").value;
+let pass = document.getElementById("password").value;
+let confirm = document.getElementById("confirmar").value;
+let mayor = document.getElementById("mayor").checked;
+let mensaje = document.getElementById("mensaje");
 
-  if(pass !== confirm){
-    mensaje.innerText = "Las contraseñas no coinciden.";
-    return;
-  }
-
-  localStorage.setItem("usuario", document.getElementById("correo").value);
-  localStorage.setItem("clave", pass);
-
-  window.location.href="login.html";
+if(!mayor){
+mensaje.innerText = "Debes ser mayor de edad.";
+return;
 }
+
+if(pass !== confirm){
+mensaje.innerText = "Las contraseñas no coinciden.";
+return;
+}
+
+localStorage.setItem("nombre", nombre);
+localStorage.setItem("correo", correo);
+localStorage.setItem("clave", pass);
+
+alert("Registro exitoso");
+
+window.location.href="login.html";
+
+}
+
 </script>
 
 </body>

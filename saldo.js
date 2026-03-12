@@ -1,17 +1,23 @@
-let saldo = 0;
+let saldo = localStorage.getItem("saldo");
 
-window.onload = function() {
+if(saldo === null){
 
-let aceptar = confirm("🎁 Bienvenido. ¿Deseas recibir S/10 por iniciar sesión?");
+let aceptar = confirm("🎁 Bienvenido ¿Deseas recibir S/10?");
 
 if(aceptar){
 saldo = 10;
-alert("¡Recibiste S/10!");
 }else{
 saldo = 0;
-alert("No aceptaste el regalo.");
 }
 
-document.getElementById("saldo").textContent = saldo;
+localStorage.setItem("saldo", saldo);
 
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+let saldoElemento = document.getElementById("saldo");
+
+if(saldoElemento){
+saldoElemento.textContent = saldo;
+}
+});

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Mi Perfil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="menu">
+<a href="principal.html">Inicio</a>
+<a href="categorias.html">Categorías</a>
+<a href="selectivos.html">Selectivos</a>
+<a href="perfil.html">Perfil</a>
+<a href="eventos.html">Eventos</a>
+<a href="ranking.html">Ranking Mundial</a>
+<a href="mundial.html">MUNDIAL</a>
+</nav>
+
+<div class="perfil-container">
+
+<h1 class="perfil-titulo">Mi Perfil</h1>
+
+<p class="perfil-info"><b>Nombre:</b> <span id="nombre"></span></p>
+
+<p class="perfil-info"><b>Correo:</b> <span id="correo"></span></p>
+
+<p class="perfil-info"><b>Saldo disponible:</b> S/10</p>
+
+<p class="perfil-info"><b>Ranking:</b> #25</p>
+
+<p class="perfil-info"><b>Eventos participados:</b> 8</p>
+
+<button class="boton-salir" onclick="cerrarSesion()">Cerrar sesión</button>
+
+</div>
+
+<script>
+
+document.getElementById("nombre").innerText = localStorage.getItem("nombre");
+
+document.getElementById("correo").innerText = localStorage.getItem("correo");
+
+function cerrarSesion(){
+
+localStorage.removeItem("nombre");
+localStorage.removeItem("correo");
+
+alert("Sesión cerrada");
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+</body>
+</html>

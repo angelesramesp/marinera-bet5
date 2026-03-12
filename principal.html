@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Menú Principal - Marinera Bets</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Menú Principal - Marinera Bets</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="menu">
-        <a href="principal.html">Inicio</a>
-        <a href="categorias.html">Categorías</a>
-        <a href="selectivos.html">Selectivos</a>
-        <a href="perfil.html">Perfil</a>
-        <a href="eventos.html">Eventos</a>
-    </nav>
+<button onclick="modoOscuro()">Modo oscuro</button>
 
-    <header class="main-header">
-        
-        <h1>Marinera Bet4</h1>
-        
-        <p>💰 Saldo disponible: S/ <span id="saldo">0</span></p>
-    
-    </header>
+<h2>Cuenta regresiva para el Concurso Nacional de Marinera 2027</h2>
+<p id="contador"></p>
 
-    <main class="menu-grid">
+<nav class="menu">
+<a href="principal.html">Inicio</a>
+<a href="categorias.html">Categorías</a>
+<a href="selectivos.html">Selectivos</a>
+<a href="perfil.html">Perfil</a>
+<a href="eventos.html">Eventos</a>
+<a href="ranking.html">Ranking</a>
+<a href="mundial.html">MUNDIAL</a>
+</nav>
 
-        <a href="#">
-            <div class="menu-card">Concursos</div>
-        </a>
+<header class="main-header">
+<h1>Marinera Bet4</h1>
+<p>💰 Saldo disponible: S/ <span id="saldo">0</span></p>
+</header>
 
-        <a href="selectivos.html">
-            <div class="menu-card">Selectivos</div>
-        </a>
+<main class="menu-grid">
 
-        <a href="#">
-            <div class="menu-card">Mundial</div>
-        </a>
+<a href="#">
+<div class="menu-card">Concursos</div>
+</a>
 
-        <a href="#">
-            <div class="menu-card">Ranking Mundial</div>
-        </a>
+<a href="selectivos.html">
+<div class="menu-card">Selectivos</div>
+</a>
 
-        <a href="categorias.html">
-            <div class="menu-card">Categorías</div>
-        </a>
+<a href="mundial.html">
+<div class="menu-card">Mundial</div>
+</a>
 
-    </main>
-    <script src="saldo.js"></script>
+<a href="ranking.html">
+<div class="menu-card">Ranking Mundial</div>
+</a>
 
+<a href="categorias.html">
+<div class="menu-card">Categorías</div>
+</a>
+
+</main>
+
+<a href="apostar.html" class="boton-apostar">Apostar</a>
+
+<script src="saldo.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
